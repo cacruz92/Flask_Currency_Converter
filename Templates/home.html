@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Currency Converter</h1>
+<form action="/complete" method="POST">
+    <label for="confrom">Convert From:</label><input type="text" name="confrom" placeholder="USD, GBP, etc..."><br>
+    <label for="conto">Convert To:</label><input type="text" name="conto" placeholder="USD, GBP, etc..."><br>
+    <label for="amount">Amount:</label><input type="text" name="amount" placeholder="1,000,000"><br>
+    <button type="submit">Convert</button>
+</form>
+
+{% endblock %}
